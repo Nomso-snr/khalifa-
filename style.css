@@ -1,0 +1,84 @@
+:root {
+  --bg: #02030a;
+  --container-bg: linear-gradient(180deg,#06102a,#1c0b2f);
+  --container-border: #121428;
+  --text: #e6eef8;
+  --muted: #9aa3cf;
+  --input-border: #27304a;
+  --button-bg: #6d28d9;
+  --button-hover: #5b21b6;
+  --name-color: #c084fc;
+  --shadow-color: rgba(2,6,23,0.6);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  background: var(--container-bg);
+  border: 1px solid var(--container-border);
+  padding: 22px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 12px 36px var(--shadow-color);
+}
+
+h1 {
+  margin: 0 0 12px 0;
+  color: var(--text);
+}
+
+.highlight-name {
+  display: block;
+  margin-top: 6px;
+  color: var(--name-color);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  font-weight: 700;
+  font-size: 0.95em;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid var(--input-border);
+  font-size: 16px;
+  background: #071026;
+  color: var(--text);
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: var(--button-bg);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: var(--button-hover);
+}
+
+#result {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--muted);
+}
+
+/* `.site-footer` removed — footer no longer present in HTML */
